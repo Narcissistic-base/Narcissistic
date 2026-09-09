@@ -1,4 +1,4 @@
-/* RESET & FONTS */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ANNOUNCEMENT BAR */
+
 .announcement-bar {
   background-color: #ffffff;
   color: #000000;
@@ -26,7 +26,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* NAVBAR */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -65,7 +65,7 @@ body {
   color: #ffffff;
 }
 
-/* HERO SECTION */
+
 .hero {
   height: 65vh;
   display: flex;
@@ -112,7 +112,7 @@ body {
   transform: scale(1.02);
 }
 
-/* SECTION HEADERS */
+
 .about,
 .members-section,
 .gallery-section {
@@ -134,7 +134,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* ABOUT */
+
 .about {
   border-bottom: 1px solid #1a1a1a;
 }
@@ -146,7 +146,7 @@ body {
   max-width: 800px;
 }
 
-/* CATALOG CONTROLS (SEARCH & TABS) */
+
 .catalog-controls {
   display: flex;
   flex-direction: column;
@@ -211,7 +211,7 @@ body {
   font-weight: 700;
 }
 
-/* CATALOG CONTENT SHOW/HIDE */
+
 .catalog-content {
   display: none;
 }
@@ -220,7 +220,7 @@ body {
   display: block;
 }
 
-/* MEMBERS GRID (COMPACT MOBILE FRIENDLY) */
+
 .members-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -240,16 +240,16 @@ body {
   transform: translateY(-4px);
 }
 
-/* HIGHLIGHT UNTUK ADMIN CARD */
+
 .admin-card {
   border-color: #333333;
 }
 
-/* UKURAN FRAME FOTO LEBIH RINGKAS/KECIL (MOBILE OPTIMIZED) */
+
 .card-image {
   position: relative;
   width: 100%;
-  height: 260px; /* Ukuran dipersingkat dari 380px ke 260px */
+  height: 260px; 
   background-color: #111111;
   overflow: hidden;
 }
@@ -279,7 +279,7 @@ body {
   transform: scale(1.05);
 }
 
-/* HOVER PHOTO SWAP */
+
 .member-card:hover .img-primary {
   opacity: 0;
 }
@@ -318,7 +318,7 @@ body {
   border: 1px solid #ffffff;
 }
 
-/* INFO BIODATA COMPACT */
+
 .card-info {
   padding: 14px;
 }
@@ -357,7 +357,7 @@ body {
   color: #ffffff;
 }
 
-/* GALLERY GRID */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -386,7 +386,7 @@ body {
   transform: scale(1.05);
 }
 
-/* FOOTER */
+
 footer {
   padding: 35px;
   text-align: center;
@@ -396,7 +396,7 @@ footer {
   letter-spacing: 2px;
 }
 
-/* ANIMASI SCROLL REVEAL (SAFE FALLBACK) */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -410,7 +410,7 @@ footer {
   transform: translateY(0) !important;
 }
 
-/* OPTIMASI TAMBAHAN RESPONSIF HP */
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.8rem;
@@ -423,10 +423,10 @@ footer {
   .members-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-  } /* 2 Kolom Sejajar di HP */
+  } 
   .card-image {
     height: 190px;
-  } /* Frame lebih pendek lagi di HP agar cepat di-scroll */
+  } 
   .card-info h3 {
     font-size: 15px;
   }
