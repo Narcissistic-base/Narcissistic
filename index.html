@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NARCISSISTIC BASE</title>
+    <link rel="stylesheet" href="model.css" />
+    <!-- Font streetwear Oswald & Space Grotesk -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">NARCISSISTIC OFFICIAL MEMBER CATALOG &bull; SEASON 2026</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">NARCISSISTIC</div>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#members">CATALOG</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero reveal">
+      <div class="hero-content">
+        <h1 class="hero-title">NARCISSISTIC BASE</h1>
+        <p class="hero-sub">OFFICIAL CREW & ROSTER</p>
+        <a href="#members" class="btn-store">EXPLORE CATALOG</a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about reveal">
+      <div class="section-header">
+        <h2>// ABOUT THE CREW</h2>
+      </div>
+      <p>Gatau mau isi apaan.</p>
+    </section>
+
+    <!-- MEMBERS CATALOG SECTION -->
+    <section id="members" class="members-section reveal">
+      <div class="section-header">
+        <h2>// WUJUD ASLI MEMBER NARSISTIK</h2>
+        <p class="subtitle">SELECT CATEGORY OR SEARCH MEMBER</p>
+      </div>
+
+      <!-- SEARCH BAR & CATALOG TABS -->
+      <div class="catalog-controls">
+        <!-- Search Bar -->
+        <div class="search-box">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="memberSearch" placeholder="SEARCH MEMBER OR ROLE..." onkeyup="filterMembers()" />
+        </div>
+
+        <!-- Tab Buttons -->
+        <div class="catalog-tabs">
+          <button class="tab-btn active" onclick="switchCatalog('male')">MALE ROSTER</button>
+          <button class="tab-btn" onclick="switchCatalog('female')">FEMALE ROSTER</button>
+        </div>
+      </div>
+
+      <!-- KATALOG 1: MALE MEMBERS -->
+      <div id="catalog-male" class="catalog-content active-catalog">
+        <div class="members-grid">
+          <!-- ADMIN (Utama Paling Atas) -->
+          <div class="member-card admin-card reveal" data-name="tatang herobrine jendral hitam admin">
+            <div class="card-image">
+              <img src="images/member1.jpg" alt="" class="img-primary" />
+              <img src="images/member1-alt.jpg" alt="" class="img-secondary" />
+              <span class="status-tag admin-tag">ADMIN</span>
+            </div>
+            <div class="card-info">
+              <div class="role-tag">ROLE</div>
+              <h3>NAMA</h3>
+              <p class="bio">"BIO DATA"</p>
+              <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMBER MALE 2 -->
+          <div class="member-card reveal" data-name="wahyu core member">
+            <div class="card-image">
+              <img src="images/member2.jpg" alt="" class="img-primary" />
+              <img src="images/member2-alt.jpg" alt="" class="img-secondary" />
+              <span class="status-tag active">STATUS</span>
+            </div>
+            <div class="card-info">
+              <div class="role-tag">ROLE</div>
+              <h3>NAMA</h3>
+              <p class="bio">"BIO DATA"</p>
+              <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMBER MALE 3 -->
+          <div class="member-card reveal" data-name="riu content creator">
+            <div class="card-image">
+              <img src="images/member3.jpg" alt="" class="img-primary" />
+              <img src="images/member3-alt.jpg" alt="" class="img-secondary" />
+              <span class="status-tag leave">INACTIVE</span>
+            </div>
+            <div class="card-info">
+              <div class="role-tag">ROLE</div>
+              <h3>NAMA</h3>
+              <p class="bio">"BIO DATA"</p>
+              <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KATALOG 2: FEMALE MEMBERS -->
+      <div id="catalog-female" class="catalog-content">
+        <div class="members-grid">
+          <!-- ADMIN FEMALE (Utama Paling Atas) -->
+          <div class="member-card admin-card reveal" data-name="">
+            <div class="card-image">
+              <img src="images/female-admin.jpg" alt="" class="img-primary" />
+              <img src="images/female-admin-alt.jpg" alt="" class="img-secondary" />
+              <span class="status-tag admin-tag">ADMIN</span>
+            </div>
+            <div class="card-info">
+              <div class="role-tag">ROLE</div>
+              <h3>NAMA</h3>
+              <p class="bio">"BIO DATA"</p>
+              <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMBER FEMALE 2 -->
+          <div class="member-card reveal" data-name="">
+            <div class="card-image">
+              <img src="images/female1.jpg" alt="" class="img-primary" />
+              <img src="images/female1-alt.jpg" alt="" class="img-secondary" />
+              <span class="status-tag active">ACTIVE</span>
+            </div>
+            <div class="card-info">
+              <div class="role-tag">ROLE</div>
+              <h3>NAMA</h3>
+              <p class="bio">"BIO DATA"</p>
+              <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMBER FEMALE 3 -->
+          <div class="member-card reveal" data-name="">
+            <div class="card-image">
+              <img src="images/female2.jpg" alt="" class="img-primary" />
+              <img src="images/female2-alt.jpg" alt="" class="img-secondary" />
+              <span class="status-tag active">ACTIVE</span>
+            </div>
+            <div class="card-info">
+              <div class="role-tag">STATUS</div>
+              <h3>NAMA</h3>
+              <p class="bio">"BIO DATA"</p>
+              <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery-section reveal">
+      <div class="section-header">
+        <h2>// GALLERY & LOOKBOOK</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/hero-bg.jpg" alt="Momen 1" /></div>
+        <div class="gallery-item"><img src="images/member1.jpg" alt="Momen 2" /></div>
+        <div class="gallery-item"><img src="images/member2.jpg" alt="Momen 3" /></div>
+        <div class="gallery-item"><img src="images/member3.jpg" alt="Momen 4" /></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 NEW NARCISSISTIC. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="Detail.js"></script>
+  </body>
+</html>
